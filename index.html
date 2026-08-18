@@ -440,6 +440,9 @@ header{
     position:relative;
     min-height:580px;
 }
+   .honest-images-mobile{
+    display:none;
+}
 
 .honest-images .photo-one{
     position:absolute;
@@ -850,7 +853,7 @@ footer p{
 
     .hero{
     min-height:0;
-    height:75svh;
+    height:78svh;
     background-position:center bottom;
 }
 
@@ -955,6 +958,13 @@ footer p{
         grid-template-columns:1fr;
         gap:55px;
     }
+   .honest-grid > .honest-images:not(.honest-images-mobile){
+    display:none;
+}
+
+.honest-images-mobile{
+    display:block;
+}
 
     .honest-images{
         min-height:430px;
@@ -966,10 +976,10 @@ footer p{
     }
 
     .honest-images .photo-two{
-        width:58%;
-        height:245px;
-        border-width:8px;
-    }
+    width:58%;
+    height:245px;
+    border-width:4px;
+}
 
     .honest-content{
         text-align:center;
@@ -1421,7 +1431,21 @@ footer p{
             </div>
 
         </div>
+<div class="honest-images honest-images-mobile">
 
+    <img
+        src="zakusek4.jpg"
+        alt="Zákusky S láskou pečené"
+        class="photo-one"
+    >
+
+    <img
+        src="zakusek1.jpg"
+        alt="Zákusky S láskou pečené"
+        class="photo-two"
+    >
+
+</div>
 
     </div>
 
